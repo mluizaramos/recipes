@@ -1,10 +1,12 @@
+import { Banner } from "../components/Banner";
 import { Header } from "../components/header";
-import { recipes } from "../data/recipes";
+//import { recipes } from "../data/recipes";
 
 export function Home() {
   return (
     <>
     <Header/>
+    <Banner />
     {/* <main className="p-4">
           <h1 className="text-xl font-bold mb-4">
               Receitas
