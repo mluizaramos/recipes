@@ -1,14 +1,13 @@
 import { recipes } from "../data/recipes";
 
-export function MainRecipes(){
-    return (
-        <section className="px-5 py-10">
+export function CandyRecipes() {
+    return(
+        <section className="px-5">
             <div>
-                <p className="text-base font-medium py-3 text-start">Principais Receitas</p>
+                <p className="text-base font-medium py-3 text-start">Doces Deliciosos</p>
             </div>
-
             <div>
-                <ul className="grid grid-cols-3 gap-2">
+                <ul className="grid grid-cols-2 gap-2">
                     {recipes.map((recipe) => (
                         <li
                             key={recipe.id}
@@ -17,13 +16,13 @@ export function MainRecipes(){
                             <img
                                 src={recipe.image}
                                 alt={recipe.title}
-                                className="h-20 w-full object-cover" />
+                                className="h-40 w-full object-cover" />
 
-                            <div className="p-1">
-                                <h2 className="text-sm font-medium text-start">
+                            <div className="p-4">
+                                <h2 className="text-base font-medium text-start">
                                     {recipe.title}
                                 </h2>
-                                <span className="text-start text-xs text-zinc-500">
+                                <span className="text-start text-base text-zinc-500">
                                     ⏱ {recipe.time}
                                 </span>
                             </div>

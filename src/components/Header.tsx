@@ -5,13 +5,13 @@ export function Header() {
         <header className="shadow-sm">
 
             {/* logo */}
-            <div className="bg-white py-1">
-                <p className="text-lg font-medium text-mainOrange text-center">
+            <div className="bg-mainOrange py-3">
+                <p className="text-xl font-semibold text-white text-center">
                     Receitas da Rita
                 </p>
             </div>
 
-            <div className="bg-mainOrange py-3 px-4 flex items-center justify-center gap-2">
+            <div className="bg-white py-3 px-4 flex items-center justify-center gap-2">
                 {/* search */}
                 <div className="relative flex-1">
                     <Search
@@ -26,10 +26,10 @@ export function Header() {
                 </div>
 
                 {/* Login */}
-                <ChefHat className="text-white" size={24} />
+                <ChefHat className="text-mainOrange" size={24} />
 
                 {/* Ícone menu */}
-                <Menu className="text-white" size={24} />
+                <Menu className="text-mainOrange" size={24} />
             </div>
         </header>
     )
