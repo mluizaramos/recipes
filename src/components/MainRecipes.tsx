@@ -1,6 +1,6 @@
 import { recipes } from "../data/recipes";
 
-export function MainRecipes(){
+export function MainRecipes() {
     return (
         <section className="px-5 py-10">
             <div>
@@ -8,7 +8,7 @@ export function MainRecipes(){
             </div>
 
             <div>
-                <ul className="grid grid-cols-3 gap-2">
+                <ul className="grid grid-cols-3 gap-3">
                     {recipes.map((recipe) => (
                         <li
                             key={recipe.id}
@@ -19,7 +19,7 @@ export function MainRecipes(){
                                 alt={recipe.title}
                                 className="h-20 w-full object-cover" />
 
-                            <div className="p-1">
+                            <div className="p-1 px-2">
                                 <h2 className="text-sm font-medium text-start">
                                     {recipe.title}
                                 </h2>

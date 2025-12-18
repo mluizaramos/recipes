@@ -20,7 +20,7 @@ export function Header() {
                     />
                     <input
                         type="text"
-                        className="bg-mainGray rounded-xl px-4 placeholder:text-sm py-1 w-full pl-10 outline-none text-zinc-400 text-sm" 
+                        className="bg-mainGray rounded-xl px-4 placeholder:text-sm py-1 w-full pl-10 outline-none text-zinc-400 text-sm"
                         placeholder="Pesquise..."
                     />
                 </div>
