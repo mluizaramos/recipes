@@ -6,3 +6,5 @@ export default defineConfig({
   base: '/recipes/',
   plugins: [react()],
 })
+
+//para subir alterações no github pages: npm run deploy
