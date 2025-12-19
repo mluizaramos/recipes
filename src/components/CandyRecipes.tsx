@@ -4,7 +4,7 @@ import { recipes } from "../data/recipes";
 
 export function CandyRecipes() {
     return (
-        <section className="px-5">
+        <section className="px-5 mb-8">
             <div>
                 <p className="text-mainOrange text-base font-medium py-3 text-start">Doces Deliciosos</p>
             </div>
