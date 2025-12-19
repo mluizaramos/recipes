@@ -7,4 +7,4 @@ export default defineConfig({
   plugins: [react()],
 })
 
-//para subir alterações no github pages: npm run deploy
+//para subir alterações no github pages: npm run build e npm run deploy
