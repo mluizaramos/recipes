@@ -11,7 +11,7 @@ export function Header() {
                     to="/"
                     className=""
                 >
-                    <p className="text-xl font-semibold text-white text-center">
+                    <p className="text-lg font-semibold text-white text-center">
                         Receitas da Rita
                     </p>
                 </Link>
