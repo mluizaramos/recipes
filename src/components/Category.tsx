@@ -5,7 +5,7 @@ export function Category() {
         <section className="px-6 py-4">
 
             <div className="p-4">
-                <p className="text-center font-medium text-base">Categorias das Receitas</p>
+                <p className="text-mainOrange text-center text-base font-medium">Categorias das Receitas</p>
             </div>
 
             <div className="grid grid-cols-3 gap-3">

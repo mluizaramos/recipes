@@ -7,4 +7,8 @@ export interface Recipe {
     category: string;
     serving?: string;
     favorite?: boolean;
+    rating?: string;
+    ingredients: string[];
+    steps: string[];
+    level?: string;
 }

@@ -1,14 +1,20 @@
 import { ChefHat, Menu, Search } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export function Header() {
     return (
         <header className="shadow-sm">
 
             {/* logo */}
-            <div className="bg-mainOrange py-3">
-                <p className="text-xl font-semibold text-white text-center">
-                    Receitas da Rita
-                </p>
+            <div className="bg-mainOrange py-1">
+                <Link
+                    to="/"
+                    className=""
+                >
+                    <p className="text-xl font-semibold text-white text-center">
+                        Receitas da Rita
+                    </p>
+                </Link>
             </div>
 
             <div className="bg-white py-3 px-4 flex items-center justify-center gap-2">

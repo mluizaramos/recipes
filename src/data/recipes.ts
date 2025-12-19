@@ -1,45 +1,116 @@
 import type { Recipe } from "../types/recipe";
 
 export const recipes: Recipe[] = [
-    {
-        id: 1,
-        title: "Bolo de Chocolate",
-        description: "Bolo com massa de ninho e cobertura de chocolate",
-        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
-        time: "45 min",
-        category: "Doce"
-    },
-    {
-        id: 2,
-        title: "Macarrão à Bolonhesa",
-        description: "Macarrão com massa de ninho e cobertura de chocolate",
-        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
-        time: "30 min",
-        category: "Salgado"
-    },
-    {
-        id: 3,
-        title: "Bolo de Chocolate",
-        description: "Bolo com massa de ninho e cobertura de chocolate",
-        image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
-        time: "45 min",
-        category: "Doce"
-    },
-    // {
-    //     id: 4,
-    //     title: "Macarrão à Bolonhesa",
-    //     description: "Macarrão com massa de ninho e cobertura de chocolate",
-    //     image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
-    //     time: "30 min",
-    //     category: "Salgado"
-    // },
-    // {
-    //     id: 5,
-    //     title: "Bolo de Chocolate",
-    //     description: "Bolo com massa de ninho e cobertura de chocolate",
-    //     image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
-    //     time: "45 min",
-    //     category: "Doce"
-    // },
+  {
+    id: 1,
+    title: "Bolo de Fubá de Pão de Ló",
+    description: "Bolo com massa de ninho e cobertura de chocolate",
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    time: "45 min",
+    category: "Doce",
+    rating: "★★★★★",
+    serving: "4 pessoas",
+    level: "Média",
+    ingredients: [
+      "3 ovos",
+      "1 xícara de açúcar",
+      "1 xícara de leite",
+      "1 xícara de fubá",
+      "1 colher de fermento em pó",
+    ],
 
-]
+    steps: [
+      "Preaqueça o forno a 180°C.",
+      "Bata os ovos com o açúcar até obter um creme claro.",
+      "Adicione o leite e o fubá e misture bem.",
+      "Por último, acrescente o fermento.",
+      "Asse por cerca de 40 minutos.",
+    ],
+  },
+  {
+    id: 2,
+    title: "Macarrão à Bolonhesa",
+    description: "Macarrão com massa de ninho e cobertura de chocolate",
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    time: "30 min",
+    category: "Salgado",
+    serving: "4 pessoas",
+    level: "Fácil",
+    rating: "★★★★★",
+    ingredients: [
+      "3 ovos",
+      "1 xícara de açúcar",
+      "1 xícara de leite",
+      "1 xícara de fubá",
+      "1 colher de fermento em pó",
+    ],
+
+    steps: [
+      "Preaqueça o forno a 180°C. Preaqueça o forno a 180°C. Preaqueça o forno a 180°C. Preaqueça o forno a 180°C.",
+      "Bata os ovos com o açúcar até obter um creme claro. Preaqueça o forno a 180°C. Preaqueça o forno a 180°C.",
+      "Adicione o leite e o fubá e misture bem.",
+      "Por último, acrescente o fermento. Preaqueça o forno a 180°C.",
+      "Asse por cerca de 40 minutos. Preaqueça o forno a 180°C.",
+    ],
+  },
+  {
+    id: 3,
+    title: "Bolo de Milho Natural",
+    description: "Bolo com massa de ninho e cobertura de chocolate",
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    time: "45 min",
+    category: "Doce",
+    rating: "★★★★★",
+    serving: "4 pessoas",
+    level: "Fácil",
+    ingredients: [
+      "3 ovos",
+      "1 xícara de açúcar",
+      "1 xícara de leite",
+      "1 xícara de fubá",
+      "1 colher de fermento em pó",
+    ],
+
+    steps: [
+      "Preaqueça o forno a 180°C.",
+      "Bata os ovos com o açúcar até obter um creme claro.",
+      "Adicione o leite e o fubá e misture bem.",
+      "Por último, acrescente o fermento.",
+      "Asse por cerca de 40 minutos.",
+    ],
+  },
+  {
+    id: 4,
+    title: "Torta de Carne de Lidificador",
+    description: "Macarrão com massa de ninho e cobertura de chocolate",
+    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    time: "45 min",
+    category: "Salgado",
+    rating: "★★★★★",
+    serving: "6 pessoas",
+    level: "Dificil",
+    ingredients: [
+      "3 ovos",
+      "1 xícara de açúcar",
+      "1 xícara de leite",
+      "1 xícara de fubá",
+      "1 colher de fermento em pó",
+    ],
+
+    steps: [
+      "Preaqueça o forno a 180°C.",
+      "Bata os ovos com o açúcar até obter um creme claro.",
+      "Adicione o leite e o fubá e misture bem.",
+      "Por último, acrescente o fermento.",
+      "Asse por cerca de 40 minutos.",
+    ],
+  },
+  // {
+  //     id: 5,
+  //     title: "Bolo de Chocolate",
+  //     description: "Bolo com massa de ninho e cobertura de chocolate",
+  //     image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+  //     time: "45 min",
+  //     category: "Doce"
+  // },
+];
