@@ -52,24 +52,24 @@ export function RecipeDetails() {
                     <div className="grid grid-cols-3 gap-3 ">
                         <div className="flex flex-col items-start p-3 rounded-2xl shadow-sm mt-4 border-2 border-zinc-100 ">
                             <Clock size={22} className="text-zinc-700" />
-                            <p className="mt-4 text-sm font-light text-zinc-500">Tempo</p>
-                            <p className="mt-1 text-base font-medium text-zinc-700">
+                            <p className="mt-4 text-xs font-light text-zinc-500">Tempo</p>
+                            <p className="mt-1 text-sm font-medium text-zinc-700">
                                 {recipe.time}
                             </p>
                         </div>
                         <div className="flex flex-col items-start p-3 rounded-2xl shadow-sm mt-4 border-2 border-zinc-100">
                             <ChartNoAxesColumnIncreasing size={22} className="text-zinc-700" />
-                            <p className="mt-4 text-sm font-light text-zinc-500">
+                            <p className="mt-4 text-xs font-light text-zinc-500">
                                 Dificuldade
                             </p>
-                            <p className="mt-1 text-base font-medium text-zinc-700">
+                            <p className="mt-1 text-sm font-medium text-zinc-700">
                                 {recipe.level}
                             </p>
                         </div>
                         <div className="flex flex-col items-start p-3 rounded-2xl shadow-sm mt-4 border-2 border-zinc-100">
                             <Utensils size={22} className="text-zinc-700" />
-                            <p className="mt-4 text-sm font-light text-zinc-500">Serve</p>
-                            <p className="mt-1 text-base font-medium text-zinc-700">
+                            <p className="mt-4 text-xs font-light text-zinc-500">Serve</p>
+                            <p className="mt-1 text-sm font-medium text-zinc-700">
                                 {recipe.serving}
                             </p>
                         </div>
@@ -83,7 +83,7 @@ export function RecipeDetails() {
                         Ingredientes
                     </h2>
 
-                    <ul className="space-y-2  bg-zinc-50 p-6 rounded-3xl">
+                    <ul className="space-y-2  bg-zinc-50 p-6 rounded-3xl shadow-sm">
                         {recipe.ingredients.map((ingredient, index) => (
                             <li
                                 key={index}
@@ -115,7 +115,7 @@ export function RecipeDetails() {
                                     {index + 1}
                                 </span>
 
-                                <p className="text-sm font-normal text-zinc-400">
+                                <p className="text-sm font-light text-zinc-500">
                                     {step}
                                 </p>
                             </li>
