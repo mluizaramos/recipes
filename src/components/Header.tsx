@@ -8,7 +8,7 @@ export function Header() {
             {/* logo */}
             <div className="bg-mainOrange py-1">
                 <Link
-                    to="/home"
+                    to="/"
                     className=""
                 >
                     <p className="text-base font-semibold text-white text-center">
