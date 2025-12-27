@@ -43,11 +43,10 @@ Please change the parent <Route path="${w}"> to <Route path="${w==="/"?"*":`${w}
             shadow-sm\r
             overflow-hidden\r
             mb-1\r
-          `,children:[A.jsxs("div",{className:"relative",children:[A.jsx("img",{src:c.image,alt:c.title,className:"h-42 w-full object-cover"}),A.jsx("button",{className:"absolute top-2 right-2 bg-white/90 p-1.5 rounded-full",children:A.jsx(d1,{size:16,className:"text-mainOrange fill-mainOrange"})})]}),A.jsxs("div",{className:"p-3",children:[A.jsx("p",{className:"text-xl font-normal text-zinc-800",children:c.title}),A.jsxs("p",{className:"text-sm font-light text-zinc-400 p-1",children:[c.category," • ",c.time]})]})]},c.id))})]})}function T1(){return A.jsxs(A.Fragment,{children:[A.jsx($f,{}),A.jsx(Kv,{}),A.jsx(x1,{}),A.jsx(E1,{}),A.jsx(z1,{}),A.jsx(Jv,{}),A.jsx(Jf,{})]})}function A1(){const c=Qf();return A.jsxs("section",{className:"px-5 py-6 bg-mainGray",children:[A.jsx("h1",{className:"mb-4 text-mainOrange text-start font-light",children:"Todas as receitas"}),A.jsx("div",{className:"",children:A.jsx("ul",{className:"grid grid-cols-2 gap-3 md:grid-cols-4",children:Bu.map(r=>A.jsxs("li",{onClick:()=>c(`/recipes/${r.id}`),className:`\r
-                                    \r
+          `,children:[A.jsxs("div",{className:"relative",children:[A.jsx("img",{src:c.image,alt:c.title,className:"h-42 w-full object-cover"}),A.jsx("button",{className:"absolute top-2 right-2 bg-white/90 p-1.5 rounded-full",children:A.jsx(d1,{size:16,className:"text-mainOrange fill-mainOrange"})})]}),A.jsxs("div",{className:"p-3",children:[A.jsx("p",{className:"text-xl font-normal text-zinc-800",children:c.title}),A.jsxs("p",{className:"text-sm font-light text-zinc-400 p-1",children:[c.category," • ",c.time]})]})]},c.id))})]})}function T1(){return A.jsxs(A.Fragment,{children:[A.jsx($f,{}),A.jsx(Kv,{}),A.jsx(x1,{}),A.jsx(E1,{}),A.jsx(z1,{}),A.jsx(Jv,{}),A.jsx(Jf,{})]})}function A1(){const c=Qf();return A.jsxs("section",{className:"px-5 py-6 bg-mainGray",children:[A.jsx("h1",{className:"mb-4 text-mainOrange text-start font-light",children:"Todas as receitas"}),A.jsx("div",{className:"",children:A.jsx("ul",{className:"grid grid-cols-2 gap-4 md:grid-cols-4",children:Bu.map(r=>A.jsxs("li",{onClick:()=>c(`/recipes/${r.id}`),className:`\r
                                 bg-white\r
                                 rounded-lg\r
-                                border-1 \r
+                                border-2\r
                                 border-zinc-50\r
                                 shadow-sm\r
                                 cursor-pointer\r
