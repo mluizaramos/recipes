@@ -12,8 +12,8 @@ export function Header() {
                     className=""
                 >
                 
-                <p className="flex items-center justify-center gap-2 text-xl font-title font-semibold tracking-wide text-white">
-                    <ChefHat  size={16} />
+                <p className="flex items-center justify-center gap-2 text-lg font-title font-semibold text-white text-center">
+                    <ChefHat  size={18} />
                     Receitas da Rita
                 </p>
 

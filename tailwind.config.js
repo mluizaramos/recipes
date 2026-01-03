@@ -12,7 +12,7 @@ export default {
         mainPink: '#FFECE8'
       },
       fontFamily: {
-        title: ['"Cormorant Garamond"', 'serif'],
+        title: ['"Playfair Display"', 'serif'],
         body: ['Poppins', 'sans-serif'],
       },
     },
