@@ -10,7 +10,7 @@ export function Category() {
 
             <div className="grid grid-cols-3 gap-3">
 
-                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm">
+                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm border-2 border-zinc-50">
                     <div className="bg-mainPink p-4 rounded-full">
                         <Cake size={24} className="text-mainOrange" />
                     </div>
@@ -19,7 +19,7 @@ export function Category() {
                     </p>
                 </div>
 
-                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm">
+                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm border-2 border-zinc-50">
                     <div className="bg-mainPink p-4 rounded-full">
                         <Pizza size={24} className="text-mainOrange" />
                     </div>
@@ -28,7 +28,7 @@ export function Category() {
                     </p>
                 </div>
 
-                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm">
+                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm border-2 border-zinc-50">
                     <div className="bg-mainPink p-4 rounded-full">
                         <CupSoda size={24} className="text-mainOrange" />
                     </div>

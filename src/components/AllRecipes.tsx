@@ -6,6 +6,7 @@ export function AllRecipes() {
 
     return (
         <section className="px-5 py-6 bg-mainGray">
+            <h1 className="mb-4 text-mainOrange text-start font-light">Todas as receitas</h1>
             <div className="">
                 <ul className="grid grid-cols-2 gap-3 md:grid-cols-4">
                     {recipes.map((recipe) => (
@@ -13,13 +14,17 @@ export function AllRecipes() {
                             key={recipe.id}
                             onClick={() => navigate(`/recipes/${recipe.id}`)}
                             className="
-                                mb-1    
                                 bg-zinc-50
-                                rounded-md
-                                shadow-md
+                                rounded-lg
+                                border-2
+                                border-zinc-50
+                                shadow-sm
                                 cursor-pointer
+                                transition-all
+                                duration-200
                                 hover:shadow-lg
-                                transition
+                                hover:-translate-y-1
+                                active:scale-95
                                 "
                         >
                             <img
@@ -29,14 +34,14 @@ export function AllRecipes() {
                             />
 
                             <div className="p-2">
-                                <h2 className="text-sm font-medium text-zinc-800 leading-tight">
+                                <h2 className="mt-1 text-base font-medium text-zinc-800 leading-tight">
                                     {recipe.title}
                                 </h2>
-                                <span className="text-sm text-zinc-500">
+                                <span className="text-xs text-zinc-400">
                                     {recipe.category} • {recipe.time}
                                 </span>
 
-                                <span className="mb-2 text-sm text-yellow-500 mt-1 block">
+                                <span className="mb-1 text-sm text-yellow-500 block">
                                     {recipe.rating}
                                 </span>
                             </div>
