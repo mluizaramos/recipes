@@ -11,9 +11,13 @@ export function Header() {
                     to="/"
                     className=""
                 >
-                    <p className="text-lg font-title font-semibold tracking-wide text-white text-center">
-                        Receitas da Rita
-                    </p>
+                    
+
+                <p className="flex items-center justify-center gap-2 text-xl font-title font-semibold tracking-wide text-white">
+                <ChefHat  size={18} />
+                Receitas da Rita
+                </p>
+
                 </Link>
             </div>
 
