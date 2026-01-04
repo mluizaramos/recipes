@@ -4,7 +4,7 @@ export function LoginAdmin() {
   return (
     <>
       <Logo />
-      <div className="bg-mainGray w-full min-h-screen flex justify-center items-center p-10">
+      <div className="bg-mainGray w-full min-h-screen flex justify-center items-center p-10 overflow-hidden">
         <div className="bg-white rounded-lg shadow-lg p-8 w-96 max-w-sm">
           <h2 className="text-center text-md font-semibold text-mainOrange mb-6">Login Admin</h2>
           <form className="flex flex-col gap-4">
