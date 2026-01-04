@@ -1,73 +1,127 @@
-# React + TypeScript + Vite
+## 🍰 𝐑𝐞𝐜𝐞𝐢𝐭𝐚𝐬 𝐝𝐚 𝐑𝐢𝐭𝐚
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web **mobile-first** para visualização e navegação de receitas caseiras, com foco em experiência do usuário, organização por categorias e layout moderno inspirado em apps de culinária.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### ♨ Preview
 
-## React Compiler
+| Mobile                                                       | Desktop                                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="src/assets/readme/Untitled design (1).png" alt="Descrição da imagem" width="620" height="auto" /> | <img src="src/assets/readme/Untitled design.png" alt="Home Desktop" width="600" height="auto" />  |
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### ♨ Funcionalidades
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* **Mobile-first** com adaptação completa para desktop
+* Busca de receitas por nome
+* Filtro por categorias
+* Página de listagem de receitas
+* Página de detalhes da receita
+* Menu lateral animado com fundo desfocado
+* Scroll automático para o topo ao trocar de página
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### ♨ Estrutura de Dados
+
+As receitas seguem o seguinte modelo:
+
+```ts
+export interface Recipe {
+  id: number;
+  title: string;
+  description: string;
+  image: string;
+  time: string;
+  category: string;
+  ingredients: string[];
+  steps: string[];
+  rating?: string;
+  serving?: string;
+  level?: string;
+}
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ♨ Tecnologias Utilizadas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+* **React**
+* **TypeScript**
+* **Vite**
+* **React Router DOM**
+* **Tailwind CSS**
+* **Lucide Icons**
+
+---
+
+### ♨ Design & UX
+
+* Layout inspirado em aplicativos de receitas
+* Tipografia personalizada para identidade visual
+* Animações suaves e interações visuais
+* Navegação simples e intuitiva
+
+---
+
+### ♨ Estrutura de Pastas
+
 ```
+src/
+├── assets/
+├── components/
+│   ├── Header/
+│   ├── Home/
+│   └── Footer/
+├── data/
+│   └── recipes.ts
+├── pages/
+│   ├── Home.tsx
+│   ├── Recipes.tsx
+│   ├── Recipe.tsx
+│   └── Admin.tsx
+├── App.tsx
+└── main.tsx
+```
+
+---
+
+### ♨ Rotas da Aplicação
+
+| Rota           | Descrição                                |
+| -------------- | ---------------------------------------- |
+| `/`            | Home                                     |
+| `/recipes`     | Lista de receitas                        |
+| `/recipes/:id` | Detalhes da receita                      |
+| `/admin`       | Área administrativa (em desenvolvimento) |
+
+---
+
+### ♨ Próximas Melhorias
+
+* Favoritar receitas (persistência)
+* Filtro por nível e tempo de preparo
+* Área administrativa funcional
+* Backend / API
+* Autenticação
+
+---
+
+### ☺ Autora
+
+𝘔𝘢𝘳𝘪𝘢 𝘓𝘶𝘪𝘻𝘢 𝘙𝘢𝘮𝘰𝘴
+| `Desenvolvedora Júnior`
+
+* React • TypeScript • Tailwind • UX
+* Projeto desenvolvido para estudo e portfólio
+
+---
+
+### 📄 Licença
+
+Este projeto é apenas para fins educacionais e de portfólio.
+
+---
