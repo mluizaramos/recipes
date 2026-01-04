@@ -12,16 +12,16 @@ export function RitasFavorite() {
   if (favoriteRecipes.length === 0) return null;
 
   return (
-    <section className="px-6 py-2">
+    <section className="px-6 py-2 md:items-center md:py-6 md:px-20">
     
       <div className="mt-8 mb-4 flex items-center justify-between">
-        <p className="text-mainOrange text-base font-medium">
+        <p className="text-mainOrange text-base font-medium md:text-lg">
           Favoritas da Rita
         </p>
 
         <Link
           to="/recipes"
-          className="text-xs text-mainOrange/70 hover:underline"
+          className="text-xs text-mainOrange/70 hover:underline md:text-base"
         >
           Ver todas
         </Link>
@@ -33,15 +33,17 @@ export function RitasFavorite() {
             key={recipe.id}
             onClick={() => navigate(`/recipes/${recipe.id}`)}
             className="
-              min-w-[300px]
-              bg-white rounded-xl
-              border
-              border-zinc-100
-              shadow-sm overflow-hidden
-              text-left
-              transition-all duration-200
-              hover:shadow-md hover:-translate-y-1
-              active:scale-95
+                min-w-[300px]
+                bg-white rounded-xl
+                border
+                border-zinc-100
+                shadow-sm overflow-hidden
+                text-left
+                transition-all duration-200
+                hover:shadow-md hover:-translate-y-1
+                active:scale-95
+                md:w-[420px]
+                md:h-[380px]
             "
           >
             {/* Imagem */}

@@ -24,9 +24,9 @@ export function Category() {
   }
 
   return (
-    <section className="px-6 py-4">
+    <section className="px-6 py-4 md:items-center md:py-6 md:px-20">
       <div className="p-4">
-        <p className="text-mainOrange text-center text-base font-medium">
+        <p className="text-mainOrange text-center text-base font-medium md:text-lg md:mb-4">
           Categorias das Receitas
         </p>
       </div>
@@ -43,6 +43,7 @@ export function Category() {
               transition-all duration-200
               hover:shadow-md hover:-translate-y-1
               active:scale-95
+              md:p-8
             "
           >
             <div className="bg-mainPink p-4 rounded-full">

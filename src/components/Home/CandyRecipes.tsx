@@ -14,31 +14,33 @@ export function CandyRecipes() {
   if (candyRecipes.length === 0) return null;
 
   return (
-    <section className="px-5 mb-8 py-2">
-      <p className="text-mainOrange text-base font-medium py-3">
+    <section className="px-5 mb-8 py-2 md:items-center md:py-6 md:px-20">
+      <p className="text-mainOrange text-base font-medium py-3 md:text-lg">
         Doces Deliciosos
       </p>
 
-      <ul className="grid grid-cols-2 gap-3">
+      <ul className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-1">
         {candyRecipes.map((recipe) => (
           <button
             key={recipe.id}
             onClick={() => navigate(`/recipes/${recipe.id}`)}
-            className="
-              bg-white rounded-md
-              border
-              border-zinc-100
-              shadow-sm overflow-hidden
-              text-left
-              transition-all duration-200
-              hover:shadow-md hover:-translate-y-1
-              active:scale-95
+                className="
+                bg-white rounded-md
+                border
+                border-zinc-100
+                shadow-sm overflow-hidden
+                text-left
+                transition-all duration-200
+                hover:shadow-md hover:-translate-y-1
+                active:scale-95
+                md:w-[280px]
+                md:h-[260px]
             "
           >
             <img
               src={recipe.image}
               alt={recipe.title}
-              className="h-32 w-full object-cover"
+              className="h-32 w-full object-cover md:h-44"
             />
 
             <div className="p-3">

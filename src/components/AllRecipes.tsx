@@ -24,22 +24,24 @@ export function AllRecipes({ search }: AllRecipesProps) {
   });
 
   return (
-    <section className="px-5 py-6 bg-mainGray">
-      <h1 className="mb-4 text-mainOrange font- text-start">
+    <section className="px-5 py-6 bg-mainGray md:items-center md:py-6 md:px-20">
+      <h1 className="mb-4 text-mainOrange font- text-start md:text-lg md:py-2">
         {categoryFromUrl ? categoryFromUrl : "Todas as receitas"}
       </h1>
 
-      <ul className="grid grid-cols-2 gap-3 md:grid-cols-4">
+      <ul className="grid grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
         {filteredRecipes.map((recipe) => (
           <li
             key={recipe.id}
             onClick={() => navigate(`/recipes/${recipe.id}`)}
             className="
-              bg-zinc-50 rounded-lg border-2 border-zinc-50
-              shadow-sm cursor-pointer
-              transition-all duration-200
-              hover:shadow-lg hover:-translate-y-1
-              active:scale-95
+                bg-zinc-50 rounded-lg border-2 border-zinc-50
+                shadow-sm cursor-pointer
+                transition-all duration-200
+                hover:shadow-lg hover:-translate-y-1
+                active:scale-95
+                md:w-[280px]
+                md:h-[220px]
             "
           >
             <img

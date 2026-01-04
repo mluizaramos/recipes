@@ -17,7 +17,7 @@ export function RecipeDetails() {
     return (
         <>
 
-            <main className="px-6 py-6 bg-mainGray">
+            <main className="px-6 py-6 bg-mainGray md:items-center md:py-6 md:px-20">
                 {/* Voltar */}
                 <button
                     onClick={() => navigate(-1)}
@@ -84,7 +84,7 @@ export function RecipeDetails() {
                         {recipe.ingredients.map((ingredient, index) => (
                             <li
                                 key={index}
-                                className="flex items-center gap-2 text-sm font-light text-zinc-500"
+                                className="flex items-center gap-2 text-sm font-light text-zinc-500 md:text-base"
                             >
                                 <span className="h-2 w-2 rounded-full bg-mainOrange" />
                                 {ingredient}
@@ -112,7 +112,7 @@ export function RecipeDetails() {
                                     {index + 1}
                                 </span>
 
-                                <p className="text-sm font-light text-zinc-500">
+                                <p className="text-sm font-light text-zinc-500 md:text-base">
                                     {step}
                                 </p>
                             </li>
