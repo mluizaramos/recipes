@@ -26,6 +26,8 @@ export function CandyRecipes() {
             onClick={() => navigate(`/recipes/${recipe.id}`)}
             className="
               bg-white rounded-md
+              border
+              border-zinc-100
               shadow-sm overflow-hidden
               text-left
               transition-all duration-200
@@ -36,11 +38,11 @@ export function CandyRecipes() {
             <img
               src={recipe.image}
               alt={recipe.title}
-              className="h-40 w-full object-cover"
+              className="h-32 w-full object-cover"
             />
 
             <div className="p-3">
-              <h2 className="text-base font-medium text-center leading-tight">
+              <h2 className="text-base font-medium text-center leading-tight line-clamp-2 min-h-[2.5em]">
                 {recipe.title}
               </h2>
 

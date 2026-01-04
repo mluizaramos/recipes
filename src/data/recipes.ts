@@ -159,7 +159,7 @@ export const recipes: Recipe[] = [
   },
   {
     id: 7,
-    title: "Bolo de Coco",
+    title: "Bolo de Coco Ralado",
     description: "Macarrão com massa de ninho e cobertura de chocolate",
     image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
     time: "5 min",

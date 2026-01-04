@@ -27,14 +27,16 @@ export function RitasFavorite() {
         </Link>
       </div>
 
-      <div className="flex gap-4 overflow-x-auto pb-2">
+      <div className="flex gap-3 overflow-x-auto pb-2">
         {favoriteRecipes.map((recipe) => (
           <button
             key={recipe.id}
             onClick={() => navigate(`/recipes/${recipe.id}`)}
             className="
-              min-w-[340px]
+              min-w-[300px]
               bg-white rounded-xl
+              border
+              border-zinc-100
               shadow-sm overflow-hidden
               text-left
               transition-all duration-200
