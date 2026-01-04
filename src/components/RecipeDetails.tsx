@@ -1,6 +1,4 @@
 import { ArrowLeft, ChartNoAxesColumnIncreasing, Clock, Utensils } from "lucide-react";
-import { Footer } from "./Footer";
-import { Header } from "./Header";
 import { useNavigate, useParams } from "react-router-dom";
 import { recipes } from "../data/recipes";
 
@@ -18,7 +16,6 @@ export function RecipeDetails() {
 
     return (
         <>
-            <Header />
 
             <main className="px-6 py-6 bg-mainGray">
                 {/* Voltar */}
@@ -123,7 +120,6 @@ export function RecipeDetails() {
                     </ol>
                 </div>
             </main>
-            <Footer />
         </>
     )
 }
