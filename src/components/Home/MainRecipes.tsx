@@ -19,16 +19,16 @@ export function MainRecipes() {
                             <button
                                 onClick={() => navigate(`/recipes/${recipe.id}`)}
                                 className="
-                  mb-1 min-w-[110px]
-                  bg-white rounded-md
-                  border
-                border-zinc-100
-                  shadow-sm overflow-hidden
-                  transition-all duration-200
-                  hover:shadow-md hover:-translate-y-1
-                  active:scale-95
-                  text-center
-                "
+                                    mb-1 min-w-[110px]
+                                    bg-white rounded-md
+                                    border
+                                    border-zinc-100
+                                    shadow-sm overflow-hidden
+                                    transition-all duration-200
+                                    hover:shadow-md hover:-translate-y-1
+                                    active:scale-95
+                                    text-center
+                                    "
                             >
                                 <img
                                     src={recipe.image}
@@ -39,7 +39,7 @@ export function MainRecipes() {
                                 <div className="p-2">
                                     <h2 className="
                                         text-sm
-                                        font-base
+                                        font-medium
                                         text-zinc-800
                                         leading-tight
                                         line-clamp-2

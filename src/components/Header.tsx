@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { recipes } from "../data/recipes";
 import { Logo } from "./Header/Logo";
 import { InputSearch } from "./Header/InputSearch";
 import { MenuAction } from "./Header/MenuAction";
-import { Admin } from "./Header/Admin";
 import { SideMenu } from "./Header/SideMenu";
+import { ChefHat } from "lucide-react";
 
 type HeaderProps = {
     search: string;
@@ -44,7 +44,9 @@ export function Header({ search, setSearch }: HeaderProps) {
                     onSubmit={handleSubmit}
                 />
 
-                <Admin />
+                <Link to="/admin">
+                    <ChefHat className="text-mainOrange" size={24} />
+                </Link>
 
                 <MenuAction
                     setIsMenuOpen={setIsMenuOpen}

@@ -14,7 +14,7 @@ export function CandyRecipes() {
   if (candyRecipes.length === 0) return null;
 
   return (
-    <section className="px-5 mb-8">
+    <section className="px-5 mb-8 py-2">
       <p className="text-mainOrange text-base font-medium py-3">
         Doces Deliciosos
       </p>
