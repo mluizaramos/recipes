@@ -1,11 +1,19 @@
 import type { Recipe } from "../types/recipe";
+import boloLaranja from "../assets/pexels-catscoming-2035738.jpg";
+import boloCenoura from "../assets/pexels-any-lane-5728160.jpg";
+import boloMilho from "../assets/pexels-alejandro-jv-2128543746-34637998.jpg";
+import tortaCarne from "../assets/pexels-change-c-c-974768353-34712608.jpg";
+import sucoLimao from "../assets/pexels-juliazolotova-1320998.jpg";
+import coxinha from "../assets/pexels-jonathanborba-19264383.jpg";
+import boloCoco from "../assets/pexels-jdgromov-4841838.jpg";
+import boloMorango from "../assets/pexels-nati-87264186-30739092.jpg";
 
 export const recipes: Recipe[] = [
   {
     id: 1,
-    title: "Bolo de Fubá de Pão de Ló",
+    title: "Bolo de Laranja",
     description: "Bolo com massa de ninho e cobertura de chocolate",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    image: boloLaranja,
     time: "45 min",
     category: "Doces",
     rating: "★★★★★",
@@ -31,7 +39,7 @@ export const recipes: Recipe[] = [
     id: 2,
     title: "Bolo de Cenoura",
     description: "Bolo de Cenoura macio com massa de cenoura e cobertura de chocolate",
-    image: "https://conteudo.imguol.com.br/c/entretenimento/01/2022/02/22/bolo-de-cenoura---eu-mereco-1645533552614_v2_4x3.jpg",
+    image: boloCenoura,
     time: "50 min",
     category: "Doces",
     serving: "10 pessoas",
@@ -60,7 +68,7 @@ export const recipes: Recipe[] = [
     id: 3,
     title: "Bolo de Milho",
     description: "Bolo com massa de ninho e cobertura de chocolate",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    image: boloMilho,
     time: "45 min",
     category: "Doces",
     rating: "★★★★★",
@@ -87,7 +95,7 @@ export const recipes: Recipe[] = [
     id: 4,
     title: "Torta de Carne de Lidificador",
     description: "Macarrão com massa de ninho e cobertura de chocolate",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    image: tortaCarne,
     time: "45 min",
     category: "Salgados",
     rating: "★★★★★",
@@ -114,7 +122,7 @@ export const recipes: Recipe[] = [
     id: 5,
     title: "Suco de Limão",
     description: "Macarrão com massa de ninho e cobertura de chocolate",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    image: sucoLimao,
     time: "5 min",
     category: "Bebidas",
     rating: "★★★★★",
@@ -136,9 +144,9 @@ export const recipes: Recipe[] = [
   },
   {
     id: 6,
-    title: "Torta de Sardinha",
+    title: "Coxinha Frita",
     description: "Macarrão com massa de ninho e cobertura de chocolate",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    image: coxinha,
     time: "5 min",
     category: "Salgados",
     rating: "★★★★★",
@@ -161,7 +169,7 @@ export const recipes: Recipe[] = [
     id: 7,
     title: "Bolo de Coco Ralado",
     description: "Macarrão com massa de ninho e cobertura de chocolate",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    image: boloCoco,
     time: "5 min",
     category: "Doces",
     rating: "★★★★★",
@@ -182,9 +190,9 @@ export const recipes: Recipe[] = [
   },
   {
     id: 7,
-    title: "Bombom de Uva",
+    title: "Bolo de Morango",
     description: "Macarrão com massa de ninho e cobertura de chocolate",
-    image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b",
+    image: boloMorango,
     time: "5 min",
     category: "Doces",
     rating: "★★★★★",

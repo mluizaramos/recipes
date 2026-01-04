@@ -1,4 +1,4 @@
-import bannerImg from "../../assets/banner.png";
+import bannerImg from "../../assets/pexels-ozrenildo-1291712.jpg";
 
 export function Banner() {
     return (
