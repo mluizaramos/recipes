@@ -1,43 +1,60 @@
-import { Cake, CupSoda, Pizza } from "lucide-react";
+import { Cake, Pizza, CupSoda } from "lucide-react";
+import { useNavigate } from "react-router-dom";
+
+const categories = [
+  {
+    label: "Doces",
+    icon: Cake,
+  },
+  {
+    label: "Salgados",
+    icon: Pizza,
+  },
+  {
+    label: "Bebidas",
+    icon: CupSoda,
+  },
+];
 
 export function Category() {
-    return (
-        <section className="px-6 py-4">
+  const navigate = useNavigate();
 
-            <div className="p-4">
-                <p className="text-mainOrange text-center text-base font-medium">Categorias das Receitas</p>
+  function goToCategory(category: string) {
+    navigate(`/recipes?category=${encodeURIComponent(category)}`);
+  }
+
+  return (
+    <section className="px-6 py-4">
+      <div className="p-4">
+        <p className="text-mainOrange text-center text-base font-medium">
+          Categorias das Receitas
+        </p>
+      </div>
+
+      <div className="grid grid-cols-3 gap-3">
+        {categories.map(({ label, icon: Icon }) => (
+          <button
+            key={label}
+            onClick={() => goToCategory(label)}
+            className="
+              flex flex-col items-center
+              p-4 bg-white rounded-md
+              shadow-sm border-2 border-zinc-50
+              transition-all duration-200
+              hover:shadow-md hover:-translate-y-1
+              active:scale-95
+            "
+          >
+            <div className="bg-mainPink p-4 rounded-full">
+              <Icon size={24} className="text-mainOrange" />
             </div>
 
-            <div className="grid grid-cols-3 gap-3">
-
-                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm border-2 border-zinc-50">
-                    <div className="bg-mainPink p-4 rounded-full">
-                        <Cake size={24} className="text-mainOrange" />
-                    </div>
-                    <p className="text-sm mt-2 font-medium text-zinc-700">
-                        Doces
-                    </p>
-                </div>
-
-                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm border-2 border-zinc-50">
-                    <div className="bg-mainPink p-4 rounded-full">
-                        <Pizza size={24} className="text-mainOrange" />
-                    </div>
-                    <p className="text-sm mt-2 font-medium text-zinc-700">
-                        Salgados
-                    </p>
-                </div>
-
-                <div className="flex flex-col items-center p-4 bg-white rounded-md shadow-sm border-2 border-zinc-50">
-                    <div className="bg-mainPink p-4 rounded-full">
-                        <CupSoda size={24} className="text-mainOrange" />
-                    </div>
-                    <p className="text-sm mt-2 font-medium text-zinc-700">
-                        Bebidas
-                    </p>
-                </div>
-
-            </div>
-        </section>
-    )
+            <p className="text-sm mt-2 font-medium text-zinc-700">
+              {label}
+            </p>
+          </button>
+        ))}
+      </div>
+    </section>
+  );
 }
